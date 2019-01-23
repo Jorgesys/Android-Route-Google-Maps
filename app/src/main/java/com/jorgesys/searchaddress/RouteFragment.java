@@ -132,6 +132,7 @@ public class RouteFragment extends Fragment implements RoutingListener, GoogleAp
                         }
                         // Get the Place object from the buffer.
                         final Place place = places.get(0);
+                        Log.i(TAG, "*Place (Pick-up) latitude: " + place.getLatLng().latitude + " longitude: " + place.getLatLng().latitude);
                         start = place.getLatLng();
                     }
                 });
@@ -158,6 +159,7 @@ public class RouteFragment extends Fragment implements RoutingListener, GoogleAp
                         }
                         // Get the Place object from the buffer.
                         final Place place = places.get(0);
+                        Log.i(TAG, "*Place (Drop-off) latitude: " + place.getLatLng().latitude + " longitude: " + place.getLatLng().latitude);
                         end = place.getLatLng();
                     }
                 });
